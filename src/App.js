@@ -1,13 +1,16 @@
 import NavBar from './components/NavBar/NavBar'
-import ProjectBlock from './components/ProjectBlock/ProjectBlock'
+import { Routes, Route } from 'react-router-dom'
+import Home from './components/Home/Home'
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <div>
-        <ProjectBlock />
-      </div>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
     </div>
   )
 }

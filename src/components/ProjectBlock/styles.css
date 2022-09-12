@@ -1,3 +1,35 @@
+:root {
+  --bgc: brown;
+  --pX: 100;
+  --pY: 100;
+}
+
+
 .projectBlock {
   border: 1px solid black;
+  /* background-color: var(--bgc) */
+
+}
+
+.moveLeft {
+  animation: moveLeft 3s linear forwards;
+}
+.moveRight {}
+.moveUp {}
+.moveDown {}
+
+@keyframes moveLeft {
+  to {
+    left: var(--pX); 
+    top: var(--pY);
+  }
+}
+@keyframes moveRight {
+  to {right: 0;}
+}
+@keyframes moveTop {
+  to {top: 0;}
+}
+@keyframes moveDown {
+  to {bottom: 0;}
 }
